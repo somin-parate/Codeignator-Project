@@ -20,7 +20,7 @@ class User extends CI_Controller {
 		$this->load->library(array('session'));
 		$this->load->helper(array('url'));
 		$this->load->model('user_model');
-
+       //somin
 		
 	}
 	
@@ -51,7 +51,6 @@ class User extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 		
-		// set validation rules
 		$this->form_validation->set_rules('username', 'Username', 'trim|required|alpha_numeric|min_length[4]|is_unique[users.username]', array('is_unique' => 'This username already exists. Please choose another one.'));
 		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|is_unique[users.email]');
 		$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[6]');
