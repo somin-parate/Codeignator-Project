@@ -21,7 +21,7 @@ class User extends CI_Controller {
 		$this->load->helper(array('url'));
 		$this->load->model('user_model');
        //somin
-		
+		// keval ghandhi
 	}
 	
 	
